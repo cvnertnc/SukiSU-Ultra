@@ -1,6 +1,6 @@
 # SukiSU Ultra
 
-**English** | [简体中文](README.md) | [日本語](README-ja.md)
+**English** | [简体中文](README.md) | [日本語](README-ja.md) | [Türkçe](README-tr.md)
 
 Android device root solution based on [KernelSU](https://github.com/tiann/KernelSU)
 

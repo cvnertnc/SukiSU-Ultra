@@ -1,6 +1,6 @@
 # SukiSU Ultra
 
-**日本語** | [简体中文](README.md) | [English](README-en.md)
+**日本語** | [简体中文](README.md) | [English](README-en.md) | [Türkçe](README-tr.md)
 
 [KernelSU](https://github.com/tiann/KernelSU) をベースとした Android デバイスの root ソリューション
 
