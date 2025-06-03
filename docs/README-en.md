@@ -24,7 +24,7 @@ curl -LSs "https://raw.githubusercontent.com/SukiSU-Ultra/SukiSU-Ultra/main/kern
 
 ## How to use integrated susfs
 
-1. Use the susfs-dev branch directly without any patching
+1. Use the susfs-dev branch directly without any patching (Support for non-GKI device builds)
 
 ```
 curl -LSs "https://raw.githubusercontent.com/SukiSU-Ultra/SukiSU-Ultra/main/kernel/setup.sh" | bash -s susfs-dev
@@ -129,8 +129,6 @@ Please **all** refer to https://kernelsu.org/zh_CN/guide/installation.html
 - [wswzgdg](https://github.com/wswzgdg) Many thanks for supporting this project
 - [yspbwx2010](https://github.com/yspbwx2010) Many thanks
 - [DARKWWEE](https://github.com/DARKWWEE) Thanks for the 100 USDT Lao
-
-If the above list does not have your name, I will update it as soon as possible, and thanks again for your support!
 
 ## Contributions
 
