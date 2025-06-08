@@ -304,9 +304,6 @@
     <string name="tools">Araçlar</string>
     <!--  String resources used in SuperUser -->
     <string name="clear">Kaldır</string>
-    <string name="apps_with_root">Root izinlerine sahip uygulamalar</string>
-    <string name="apps_with_custom_profile">Özelleştirilmiş Yapılandırma Uygulaması</string>
-    <string name="other_apps">Diğer Uygulamalar</string>
     <string name="no_apps_found">Uygulama bulunamadı</string>
     <string name="selinux_enabled_toast">SELinux Etkin</string>
     <string name="selinux_disabled_toast">SELinux Devre Dışı</string>
@@ -353,7 +350,39 @@
     <string name="language_follow_system">Sistemi takip et</string>
     <string name="language_changed">Dil değiştirildi, değişiklikleri uygulamak için yeniden başlatılıyor</string>
     <string name="settings_card_dim">Kart Karanlığını Ayarlama</string>
-    <!-- Super User Related -->
+    <!-- Flash related -->
+    <string name="error_code">hata kodu</string>
+    <string name="check_log">Lütfen günlük kaydını kontrol edin</string>
+    <string name="installing_module">Modül yükleniyor %1$d/%2$d</string>
+    <string name="module_failed_count">%d yeni modül yüklenemedi</string>
+    <string name="module_download_error">Modül indirme başarısız</string>
+    <string name="kernel_flashing">Çekirdek Yükleniyor</string>
+    <!-- 分类相关 -->
+    <string name="category_all_apps">Tümü</string>
+    <string name="category_root_apps">Root</string>
+    <string name="category_custom_apps">Özel</string>
+    <string name="category_default_apps">Varsayılan</string>
+    <!-- 排序相关 -->
+    <string name="sort_name_asc">İsme göre artan sırada</string>
+    <string name="sort_name_desc">İsme göre azalan sırada</string>
+    <string name="sort_install_time_new">Kurulum zamanı (yeni)</string>
+    <string name="sort_install_time_old">Kurulum zamanı (eski)</string>
+    <string name="sort_size_desc">Boyuta göre azalan sırada</string>
+    <string name="sort_size_asc">Boyuta göre artan sırada</string>
+    <string name="sort_usage_freq">Kullanım sıklığına göre</string>
+    <!-- 状态相关 -->
+    <string name="no_apps_in_category">Bu kategoride uygulama yok</string>
+    <!-- 标签相关 -->
+    <string name="label_root">Root</string>
+    <string name="label_unmount">Çıkart</string>
+    <string name="label_custom">Özel</string>
+    <!-- FAB菜单相关 -->
+    <string name="deny_authorization">Yetkilendirme reddedildi</string>
+    <string name="grant_authorization">Yetki verildi</string>
+    <string name="unmount_modules">Modül Bağlantıları Kaldırılıyor</string>
+    <string name="disable_unmount">Modül kaldırma montajını devre dışı bırak</string>
+    <string name="expand_menu">Menüyü genişlet</string>
+    <string name="collapse_menu">Menüyü gizle</string>
     <string name="scroll_to_top">Üst</string>
     <string name="scroll_to_bottom">Alt</string>
     <string name="scroll_to_top_description">En üste kaydır</string>
@@ -363,11 +392,8 @@
     <string name="selected">Seçildi</string>
     <string name="select">seçenek</string>
     <string name="profile_umount_modules_disable">Özel kaldırma modülünü devre dışı bırak</string>
-    <!-- Flash related -->
-    <string name="error_code">hata kodu</string>
-    <string name="check_log">Lütfen günlüğü kontrol edin</string>
-    <string name="installing_module">Modül yükleniyor %1$d/%2$d</string>
-    <string name="module_failed_count">Yeni bir modül yüklenemedi: %d başarısız</string>
-    <string name="module_download_error">Modül indirilemedi</string>
-    <string name="kernel_flashing">Çekirdek Flash\'lama</string>
+    <!-- BottomSheet相关 -->
+    <string name="menu_options">Menü Seçenekleri</string>
+    <string name="sort_options">Sıralama Seçenekleri</string>
+    <string name="app_categories">Uygulama Türü Seçimi</string>
 </resources>
