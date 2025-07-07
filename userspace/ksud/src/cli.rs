@@ -1,4 +1,4 @@
-use anyhow::{Ok, Result};
+use anyhow::Result;
 use clap::Parser;
 use std::path::{Path, PathBuf};
 
@@ -295,7 +295,7 @@ pub fn run() -> Result<()> {
         log::set_max_level(LevelFilter::Info);
     }
 
-    log::info!("command: {:?}", cli.command);
+    log::info!("Executing command: {:?}", cli.command);
 
     let result = match cli.command {
         Commands::PostFsData => init_event::on_post_data_fs(),
@@ -338,9 +338,18 @@ pub fn run() -> Result<()> {
         Commands::Debug { command } => match command {
             Debug::SetManager { apk } => debug::set_manager(&apk),
             Debug::GetSign { apk } => {
-                let sign = apk_sign::get_apk_signature(&apk)?;
-                println!("size: {:#x}, hash: {}", sign.0, sign.1);
-                Ok(())
+                log::info!("Extracting signature from APK: {}", apk);
+                match apk_sign::get_apk_signature(&apk) {
+                    Ok(sign) => {
+                        log::info!("Successfully extracted APK signature");
+                        println!("size: {:#x}, hash: {}", sign.0, sign.1);
+                        Ok(())
+                    }
+                    Err(e) => {
+                        log::error!("Failed to extract APK signature: {:?}", e);
+                        Err(e)
+                    }
+                }
             }
             Debug::Version => {
                 println!("Kernel Version: {}", ksucalls::get_version());
@@ -384,7 +393,7 @@ pub fn run() -> Result<()> {
     };
 
     if let Err(e) = &result {
-        log::error!("Error: {:?}", e);
+        log::error!("Command execution failed: {:?}", e);
     }
     result
 }
